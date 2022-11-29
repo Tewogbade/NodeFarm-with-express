@@ -5,12 +5,9 @@ const express = require("express");
 const app = express();
 
 // VARIABLES
-const cards = fs.readFileSync(`${__dirname}/templates/cards.html`, "utf-8");
-const product = fs.readFileSync(`${__dirname}/templates/product.html`, "utf-8");
-const overview = fs.readFileSync(
-  `${__dirname}/templates/overview.html`,
-  "utf-8"
-);
+const cards = fs.readFileSync(`${__dirname}/cards.html`, "utf-8");
+const product = fs.readFileSync(`${__dirname}/product.html`, "utf-8");
+const overview = fs.readFileSync(`${__dirname}/overview.html`, "utf-8");
 
 // DATA
 const data = JSON.parse(
